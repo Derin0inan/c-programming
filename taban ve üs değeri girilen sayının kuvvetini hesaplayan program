@@ -1,0 +1,12 @@
+int main ()
+     int taban,us,i,sonuc=1;
+     printf("Lutfen taban degerini giriniz: ");
+     scanf("%d",&taban);
+     printf("Lutfen us degerini giriniz: ");
+     scanf("%d",&us);
+     for (i=1;i<=us;i++){
+         sonuc*=taban;
+     }
+     printf("%d^%d=%d",taban,us,sonuc);
+     return 0;
+}         
