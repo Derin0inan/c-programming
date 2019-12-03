@@ -1,0 +1,18 @@
+int main ()
+{ //klavyeden girilen N tam sayisi adedince fibonacci sayi dizisi ureten program. 
+    int N,i=0,ilk=0,sonraki,onceki=1;
+    printf("Kac tamsayi gireceksiniz: ");
+    scanf("%d",&N);
+    for (i=0;i<N;i++)
+         {
+             if (i<=1)
+                sonraki=i;
+             else{
+                sonraki=ilk+onceki;
+                ilk=onceki;
+                onceki=sonraki; 
+                 } 
+                 printf("%d ",sonraki);
+         }
+         return 0;
+}
