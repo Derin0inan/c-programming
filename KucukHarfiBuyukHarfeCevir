@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    char harf;
+    printf("kucuk harf giriniz: ");
+    scanf("%c",&harf);
+
+    if ('a'<=harf&&'z'>=harf)
+    {
+        printf("Harf: %c",harf-32);
+    }
+    else
+        printf("yanlis girdiniz.");
+    return 0;
+}
