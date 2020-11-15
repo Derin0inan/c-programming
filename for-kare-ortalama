@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+    float kare=0,ort,sayilar[4];
+    int i;
+    for (i=0;i<4;i++){
+        printf("%d. sayiyi giriniz: ",i+1);
+        scanf("%f",&sayilar[i]);
+        kare+=sayilar[i]*sayilar[i];
+    }
+    ort=kare/4;
+    printf("sayilarin karesi: %.2f\n",kare);
+    printf("sayilarin ortalamasi:%.2f\n",ort);
+return 0;
+ }
