@@ -1,0 +1,15 @@
+#include <stdio.h>
+#include <stdlib.h>
+//artik yil uygulamasinda sayi 4'e bolunuyorsa artik yildir ancak 100'e bolunuyorsa ayni zamanda 400'e de bolunmesi gerekir.
+int main()
+{
+    int yil;
+    printf("yili giriniz: ");
+    scanf("%d",&yil);
+
+    if (yil%4==0&&yil%100!=0||yil%400==0)
+    {printf("artik yildir");}
+    else
+    printf("artik yil degildir.");
+    return 0;
+}
