@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdlib.h>
+int main(){
+int i,j,n,sayilar[4];
+do{
+   printf("kac sayi gireceksiniz (max=5): ");
+scanf("%d",&n);
+}while (n>5);
+for (i=0;i<n;i++){
+          printf("%d. sayiyi giriniz: ",i+1);
+        scanf("%d",&sayilar[i]);
+}
+int en_kucuk=sayilar[0];
+for (j=1;j<n;j++){
+    if (sayilar[j]<en_kucuk){
+        en_kucuk=sayilar[j];
+    }
+}
+ printf("en kucuk sayi: %d\n",en_kucuk);
+ return 0;
+}
