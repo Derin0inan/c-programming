@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    /*Girilen sayi hem 2 ile hem de 3 ile tam bolunebiliyorsa “2 ve 3’un kati”, sadece 2 ile bolunebiliyorsa “2’nin kati”,
+     sadece 3 ile bölünebiliyorsa “3’ün kati”, ne 2’ye ne de 3’e bolunuyorsa “2 veya 3’ün kati degil” mesaji veren program
+    */
+    int sayi;
+    printf("bir sayi giriniz: ");
+    scanf("%d",&sayi);
+
+    if (sayi%2==0&&sayi%3!=0)
+        printf("sayi sadece 2ye bolunur");
+    else if (sayi%3==0&&sayi%2!=0)
+        printf("sayi sadece 3e bolunur");
+    else if (sayi%6==0)
+        printf("sayi 6ya bolunur");
+    else
+    printf("sayi 2 veya 3un kati degil");
+    return 0;
+}
